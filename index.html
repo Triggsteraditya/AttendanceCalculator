@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="header">AttendanceCalculator</h1>
+    <div class="input-section">
+      <label>Total Classes:</label>
+      <input type="number" id="totalClasses" placeholder="Enter total classes">
+      
+      <label>Total Present:</label>
+      <input type="number" id="totalPresent" placeholder="Enter total present">
+      
+      <label>Total Absent:</label>
+      <input type="number" id="totalAbsent" placeholder="Enter total absent">
+      
+      <p>Note: In the optional box, you can write the upcoming or unregistered classes, as well as mark present and absent in their respective input fields.</p>
+      
+      <div class="optional">
+        <h1 style="text-align: left;">Optional:-</h1>
+        <label>Upcoming Classes:</label>
+        <input type="number" id="upcomingClasses" placeholder="Enter upcoming classes">
+        
+        <label>Upcoming Present:</label>
+        <input type="number" id="upcomingPresent" placeholder="Enter upcoming present">
+        
+        <label>Upcoming Absent:</label>
+        <input type="number" id="upcomingAbsent" placeholder="Enter upcoming absent">
+      </div>
+    </div>
+    <button onclick="proceed()">Proceed &raquo;</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
